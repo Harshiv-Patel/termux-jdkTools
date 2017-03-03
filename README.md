@@ -1,3 +1,10 @@
 # termux-jdkTools
 A bunch of jdk tools to use with Termux.Contains following tools:
-java(just a classloader),jar,javac,javah,javap and javadoc.
+1. java(just a classloader)
+2. jar
+3. javac
+4. javah
+5. javap and
+6. javadoc. 
+Just unzip the contents of JDK Tools.zip and place them in 
+~/../usr/bin/ and it should be done.
