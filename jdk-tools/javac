@@ -3,7 +3,7 @@
 #	location of android.jar :- required for
 #	java.lang package.
 	
-	droidjar=$my/files/data/android.jar
+	droidjar=$PREFIX/bin/android.jar
 
 #	package name of javac
 

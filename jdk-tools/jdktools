@@ -7,7 +7,7 @@
 #	android.jar,also change android.jar to suit
 #	your minsdk & targetsdk
 	
-	jdk_tools=~/../usr/bin/tools.jar
+	jdk_tools=$PREFIX/bin/tools.jar
 
 #	call dalvikvm, which apparently doesn't 
 #	work on Samsung's Marshmallow ROM
