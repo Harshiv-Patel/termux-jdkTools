@@ -1,0 +1,19 @@
+#!/data/data/com.termux/files/usr/bin/bash
+#script to invoke javap with correct params
+#	location of android.jar :- required for
+#	java.lang package.
+	
+	droidjar=android.jar
+
+#	package name of javap
+
+	package_javap="sun.tools.javap.Main"
+
+#	cpArgs
+
+#	call jdktools with appropriate params
+	jdktools \
+			$package_javap \
+			-bootclasspath \
+			-classpath $PWD \
+			$droidjar $@

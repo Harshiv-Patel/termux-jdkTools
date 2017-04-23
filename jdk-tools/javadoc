@@ -1,0 +1,23 @@
+#!/data/data/com.termux/files/usr/bin/bash
+#bash script to run javadoc
+#=========================================
+#	location of android.jar
+#	you may edit it if you want place 
+#	it somewhere else, eg. in /sdcard/ .
+#	It should be readable 
+#	change it to suit your minsdk and targetsdk
+	
+	droidjar=$my/files/data/android.jar
+	tools=/sdcard/Harshiv/term/files/data/tools2.jar
+#	javadoc package name
+package_javadoc="com.sun.tools.javadoc.Main"
+#	call jdktools with proper params
+#========+++++++++=================
+#following line doesn't work, javadoc doesnt seem 
+#to like symlinks
+#jdktools $package_javadoc -bootclasspath $droidjar $@
+#instead invoke it directly
+dalvikvm \
+		-Xdex2oat \
+		-Djava.io.tmpdir=/data/data/com.termux/files/usr/tmp \
+		-cp $tools $package_javadoc -bootclasspath $droidjar $@

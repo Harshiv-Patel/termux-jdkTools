@@ -1,0 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/bash
+#based on SpartacusRex's dexClassloader, modified package name in order to avoid conflicts
+
+exec dalvikvm \
+		-classpath /data/data/com.termux/files/usr/bin/loader.jar \
+		com.hrp.java $@

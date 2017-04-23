@@ -1,0 +1,19 @@
+#!/data/data/com.termux/files/usr/bin/bash
+#helper script for using JDK tools,to keep the
+#rest of scripts a bit cleaner and short.
+#location of tools.jar
+#	you may change location of tools.jar as 
+#	long as it is readable, same goes for 
+#	android.jar,also change android.jar to suit
+#	your minsdk & targetsdk
+	
+	jdk_tools=~/../usr/bin/tools.jar
+
+#	call dalvikvm, which apparently doesn't 
+#	work on Samsung's Marshmallow ROM
+dalvikvm \
+		-Xss262912 \
+		-Xmx64M \
+		-Xdex2oat \
+		-Djava.io.tmpdir=/data/data/com.termux/files/usr/tmp \
+		-cp $jdk_tools $@
