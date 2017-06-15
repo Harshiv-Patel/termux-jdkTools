@@ -12,4 +12,4 @@ A bunch of jdk tools to use with Termux.Contains following tools:
 
 6. javadoc. 
 Just unzip the contents of JDK Tools.zip and place them in 
-~/../usr/bin/ and it should be done. You can move the android.jar to sdcard and update the classpath options accordingly.
+"~/../usr/bin/" or "$PREFIX/bin", both point at same directory, and it should be done. You can move the android.jar to sdcard and update the classpath options in scripts accordingly accordingly.
