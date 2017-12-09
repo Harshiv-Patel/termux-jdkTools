@@ -5,7 +5,8 @@ just dump everything inside the zip into
 ~/../usr/bin/
 
 and you should be fine. 
-You may want to change the android.jar file's location to save little bit of space, just put it into somewhere in internal storage (/sdcard/YOUR_DESIRED_DIR) and symlink it to 
+You may want to change the android.jar file's location to save little bit of space, 
+just put it into somewhere in internal storage (/sdcard/YOUR_DESIRED_DIR) and symlink it to 
 
 ~/../usr/bin/
 
