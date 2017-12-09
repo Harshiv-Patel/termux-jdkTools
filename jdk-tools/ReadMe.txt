@@ -9,6 +9,12 @@ You may want to change the android.jar file's location to save little bit of spa
 
 ~/../usr/bin/
 
+Building java programs is done in following cycle: 
+1. Compile java source files to create java bytecode i.e. ".class" files:
+            as there is Eclipse Java Compiler available from Termux-Packages,
+            you can use it to generate bytecode.
+2. Convert class files to dalvik executable files i.e. ".dex" files with dx tool
+3. Run dex files with 'java' command
 Not sure whether it'll work on those  Samsung's Marshmallow ROMS.
 Just a temporary toolset to use until official Open JDK 9 is available on Termux.
             -Harshiv Patel.
