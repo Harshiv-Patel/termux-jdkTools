@@ -15,6 +15,8 @@ Building java programs is done in following cycle:
             you can use it to generate bytecode.
 2. Convert class files to dalvik executable files i.e. ".dex" files with dx tool
 3. Run dex files with 'java' command
+The java command takes care of loading classes. It's a wrapper for the 
+"dalvikvm" command so you are using Android Runtime to run you code hence limitations of Android applies
 Not sure whether it'll work on those  Samsung's Marshmallow ROMS.
 Just a temporary toolset to use until official Open JDK 9 is available on Termux.
             -Harshiv Patel.
