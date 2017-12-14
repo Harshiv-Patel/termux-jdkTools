@@ -5,7 +5,8 @@ compiler="ecj"
 #java launcher to use
 launcher="java2"
 
-#name of final binary: put your desired name here without extension
+# name of final binary: put your desired name here 
+# without extension ".jar", also edit following variables that should not be empty, according to your project
 app_name=""           #==========must not be empty
 
 main_class=""		#========name of java class 
