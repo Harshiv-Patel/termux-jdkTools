@@ -28,7 +28,7 @@ It takes following arguments:
 
 "-d"    : dx tool will dump verbose output
 
-"-j"    : java compile will dump verbose output
+"-j"    : java compiler will dump verbose output
 
 "-l"    : java2 launcher will dump verbose output
 
@@ -41,4 +41,5 @@ It takes following arguments:
 "-r"    : run the resulting program.
 
 Java2 command requires following input syntax:
+
 `java2 [options] -jar [path to jar] [fully qualified main class name]`
