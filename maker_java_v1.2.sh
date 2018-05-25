@@ -150,4 +150,4 @@ cd $project_home_dir
 
 launcherargs+=( -jar ./bin/$app_name.jar )
 launcherargs+=( $main_class )
-$launcher "${launcherargs[@]}" this is -s 
+$launcher "${launcherargs[@]}" this_is_an_argument_to_java_program
